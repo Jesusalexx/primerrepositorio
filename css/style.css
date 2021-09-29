@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bodoni+Moda:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+:root {
+    --fuenteLlamativa: 'Bodoni Moda', serif;
+    --fuenteTitulos: 'Libre Baskerville', serif;
+    --fuenteTexto: 'Abel', sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuenteTexto);
+}
+
+
+/* Globales */
+
+.contenedor {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--fuenteLlamativa);
+    font-size: 55px;
+}
+
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteLlamativa);
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font: 44px;
+}
+
+
+/* header */
+
+.hero {
+    background-color: black;
+    background-image: url(../img/hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100vw;
+}
+
+.hero__nav {
+    text-align: right;
+    padding: 30px 100px 0;
+}
+
+.hero__link {
+    text-decoration: none;
+    font-family: var(--fuenteTitulos);
+    color: #fff;
+    margin-right: 20px;
+}
+
+.hero__title {
+    color: #fff;
+    background-color: #000;
+    margin-top: 150px;
+    margin-left: 910px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* section nosotros */
+
+.nosotros {
+    background-color: #141414;
+    width: 100vw;
+}
+
+.nosotros__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.nosotros__img--img {
+    width: 55%;
+    margin: 0 auto;
+    padding: 30px 30px 30px 150px;
+}
+
+.nosotros__texto {
+    width: 55%;
+    color: #fff;
+}
+
+.nosotros__btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fff;
+    padding: 15px 20px 15px 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.nosotros__btn--text {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nosotros__btn:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+
+/* main cursos */
+
+.curso {
+    width: 100vw;
+    background-color: #fff;
+}
+
+.curso__title {
+    display: inline-block;
+    margin: 60px 0px 0px 60px;
+    font-family: var(--fuenteTitulos);
+}
+
+.curso__text {
+    display: block;
+    margin: 0 0 0 60px;
+}
+
+.curso__imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px 60px;
+    column-gap: 40px;
+}
+
+.curso__img {
+    text-align: center;
+}
+
+.curso__img--img {
+    width: 350px;
+}
+
+
+/* section testimonios */
+
+.testimonios {
+    background-color: #141414;
+    width: 100vw;
+}
+
+.testimonio__column {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 40px;
+}
+
+.testimonio__img {
+    width: 50%;
+    margin: 50px auto;
+    padding-top: 10px;
+}
+
+.testimonio__testimonio {
+    text-align: left;
+    align-items: center;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.testimonio__heading {
+    color: #fff;
+    font-size: 40px;
+    font-family: var(--fuenteTitulos);
+}
+
+.testimonio__text {
+    display: inline-block;
+    color: #fff;
+}
+
+
+/* section contactos */
+
+.contacto {
+    background-color: #141414;
+    width: 100vw;
+}
+
+.contacto__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.contacto__img {
+    width: 400px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.contacto__heading {
+    color: #fff
+}
+
+.contacto__text {
+    color: #fff;
+}
